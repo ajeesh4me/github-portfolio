@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajeesh C A — Network Security Engineer</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f172a;
+      --accent-2:#0ea5a4;
+      --shadow: 0 8px 24px rgba(15,23,42,0.06);
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--accent);
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2f7);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+
+    .container{
+      width:100%;
+      max-width:900px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    /* left column */
+    .left{
+      background:linear-gradient(180deg,#0f172a 0%, #0b1220 60%);
+      color:white;
+      padding:28px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .avatar{
+      width:88px;
+      height:88px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:28px;
+      letter-spacing:0.6px;
+      margin-bottom:6px;
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1;
+    }
+    .title{
+      color:var(--accent-2);
+      font-weight:600;
+      font-size:13px;
+      margin-top:4px;
+    }
+    .section-title{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:8px;
+      color:rgba(255,255,255,0.75);
+    }
+    .muted{
+      color:rgba(255,255,255,0.85);
+      font-size:14px;
+      line-height:1.4;
+    }
+    .pill{
+      display:inline-block;
+      background:rgba(255,255,255,0.06);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      margin:4px 4px 0 0;
+    }
+    .left .list{display:flex;flex-direction:column;gap:8px;}
+    .contact{font-size:14px;color:rgba(255,255,255,0.9);word-break:break-all;}
+
+    /* right column */
+    .right{
+      padding:28px;
+      min-height:100%;
+    }
+    .headline{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .section{
+      margin-top:18px;
+    }
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:8px 20px;
+    }
+    .skill-item{font-size:14px;color:var(--muted);}
+    ul{margin:0;padding-left:18px;color:var(--muted);}
+    .chip{
+      display:inline-block;
+      border:1px solid #e6eef2;
+      padding:6px 10px;
+      border-radius:10px;
+      font-size:13px;
+      color:var(--accent);
+      margin:6px 8px 6px 0;
+      background:#fafcff;
+    }
+    .cert{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      font-size:14px;
+      color:var(--accent);
+    }
+    .footer-note{font-size:13px;color:var(--muted);margin-top:12px;}
+
+    /* responsive */
+    @media (max-width:820px){
+      .container{grid-template-columns:1fr; padding:0;}
+      .left{order:2;flex-direction:row;align-items:center;gap:12px;padding:18px;}
+      .right{order:1;padding:18px;}
+      .skills-grid{grid-template-columns:repeat(1,1fr);}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="name">
+    <aside class="left" aria-label="Contact & summary">
+      <div>
+        <div class="avatar" aria-hidden="true">AC</div>
+        <h1 id="name">Ajeesh C A</h1>
+        <div class="title">Network Security Engineer | CCNA | CCNP | CCIE SECURITY</div>
+      </div>
+
+      <div class="section" aria-labelledby="about-title">
+        <div id="about-title" class="section-title">About Me</div>
+        <p class="muted">Passionate about securing networks and building resilient infrastructure. Hands-on with firewalls, VPNs and network automation. Always exploring new security technologies.</p>
+      </div>
+
+      <div class="section" aria-labelledby="contact-title">
+        <div id="contact-title" class="section-title">Contact</div>
+        <div class="contact">📧 <a href="mailto:Ajeesh4me@gmail.com" style="color:inherit;text-decoration:underline;">Ajeesh4me@gmail.com</a></div>
+      </div>
+
+      <div class="section" aria-labelledby="cert-title">
+        <div id="cert-title" class="section-title">Certifications</div>
+        <div class="cert">
+          <div>
+            <div style="font-weight:600">FORTINET FCA</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.85)">ID: 3377040075AC</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="footer-note">Available for roles in Network Security, Firewall & VPN engineering, Threat Detection and Network Automation.</div>
+    </aside>
+
+    <section class="right" aria-label="Main">
+      <div class="headline">
+        <div style="display:flex;flex-direction:column;">
+          <h2 style="margin:0">Network Security Engineer</h2>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">Specialized in firewalls, VPNs, threat detection & automation</div>
+        </div>
+        <div style="text-align:right">
+          <div class="chip">CCNA</div>
+          <div class="chip">CCNP</div>
+          <div class="chip">CCIE Security</div>
+        </div>
+      </div>
+
+      <div class="section" aria-labelledby="skills-title">
+        <div id="skills-title" class="section-title">Core Skills</div>
+
+        <div class="skills-grid" role="list">
+          <div role="listitem">
+            <strong>Network Fundamentals</strong>
+            <div class="skill-item">OSI Model, TCP/IP, ICMP, ARP, TCP, UDP, FTP, SMTP, DHCP, DNS</div>
+          </div>
+          <div role="listitem">
+            <strong>Routing & Switching</strong>
+            <div class="skill-item">EIGRP, OSPF, BGP, MPLS, VLANs, STP, EtherChannel, VTP, DTP</div>
+          </div>
+          <div role="listitem">
+            <strong>Security Implementation</strong>
+            <div class="skill-item">ACLs, Port Security, DHCP Snooping, Layer 2/3 Security, IPS/IDS, Proxy</div>
+          </div>
+          <div role="listitem">
+            <strong>VPNs & Tunnelling</strong>
+            <div class="skill-item">Site-to-Site, SSL, IPsec, DMVPN, IKEv1/v2, GRE, MGRE</div>
+          </div>
+
+          <div role="listitem">
+            <strong>Cisco Security</strong>
+            <div class="skill-item">ESA, WSA, ISE — mail/URL filtering, posture & 802.1x policies</div>
+          </div>
+          <div role="listitem">
+            <strong>Firewalls</strong>
+            <div class="skill-item">Fortinet, Palo Alto, Check Point, FTD</div>
+          </div>
+
+          <div role="listitem">
+            <strong>Redundancy</strong>
+            <div class="skill-item">HSRP, VRRP, GLBP</div>
+          </div>
+          <div role="listitem">
+            <strong>Tools & Platforms</strong>
+            <div class="skill-item">Wireshark, GNS3, EVE-NG, Linux, Windows</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" aria-labelledby="focus-title">
+        <div id="focus-title" class="section-title">My Focus Areas</div>
+        <ul>
+          <li>Network Security Engineering</li>
+          <li>VPN & Firewall Configuration</li>
+          <li>Threat Detection & Prevention</li>
+          <li>Network Automation</li>
+        </ul>
+      </div>
+
+      <div class="section" aria-labelledby="experience-title">
+        <div id="experience-title" class="section-title">Experience — (summary)</div>
+        <p class="muted">Hands-on experience implementing and operating firewalls (Fortinet, Palo Alto, Check Point), configuring site-to-site and SSL VPNs, designing resilient routing & switching topologies, and implementing security controls (ACLs, IPS/IDS, DHCP snooping). Experienced with Cisco security solutions (ESA, WSA, ISE) and network emulation tools like GNS3 / EVE-NG for testing and automation.</p>
+      </div>
+
+      <div class="section" aria-labelledby="additional-title">
+        <div id="additional-title" class="section-title">Additional</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <div class="pill">Firewall Management</div>
+          <div class="pill">VPN Design</div>
+          <div class="pill">Threat Hunting</div>
+          <div class="pill">Network Automation</div>
+          <div class="pill">Packet Analysis</div>
+        </div>
+      </div>
+
+      <div class="section" aria-labelledby="connect-title">
+        <div id="connect-title" class="section-title">Connect</div>
+        <p class="muted">Mail: <a href="mailto:Ajeesh4me@gmail.com">Ajeesh4me@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
